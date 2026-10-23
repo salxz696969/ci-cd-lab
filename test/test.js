@@ -1,0 +1,24 @@
+import { expect } from 'chai';
+import request from 'supertest';
+import app from '../app.js';
+
+describe('GET /', () => {
+  it('returns HTTP 200', async () => {
+    const response = await request(app).get('/');
+    expect(response.status).to.equal(200);
+  });
+
+  it('returns the expected greeting', async () => {
+    const response = await request(app).get('/');
+    expect(response.text).to.equal('Hello, GitHub Actions!');
+  });
+});
+
+describe('GET /health', () => {
+  it('returns HTTP 200 and a JSON health status', async () => {
+    const response = await request(app).get('/health');
+    expect(response.status).to.equal(200);
+    expect(response.headers['content-type']).to.match(/application\/json/);
+    expect(response.body).to.deep.equal({ status: 'ok' });
+  });
+});
