@@ -1,0 +1,19 @@
+GET /
+    ✔ returns HTTP 200 (132ms)
+    1) returns the expected greeting
+
+
+  1 passing (174ms)
+  1 failing
+
+  1) GET /
+       returns the expected greeting:
+
+      AssertionError: expected 'Hello, broken greeting!' to equal 'Hello, GitHub Actions!'
+      + expected - actual
+
+      -Hello, broken greeting!
+      +Hello, GitHub Actions!
+
+      at Context.<anonymous> (file:///D:/UserData/Coding/year4/cloud/ci-cd-lab/test/test.js:13:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)

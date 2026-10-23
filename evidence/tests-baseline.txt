@@ -1,0 +1,6 @@
+GET /
+    ✔ returns HTTP 200 (103ms)
+    ✔ returns the expected greeting
+
+
+  2 passing (124ms)
