@@ -1,0 +1,17 @@
+GET /
+    ✔ returns HTTP 200 (103ms)
+    ✔ returns the expected greeting
+
+  GET /health
+    ✔ returns HTTP 200 and a JSON health status
+
+
+  3 passing (140ms)
+
+-----------|---------|----------|---------|---------|-------------------
+File       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-----------|---------|----------|---------|---------|-------------------
+All files  |      65 |       75 |       0 |      65 |
+ app.js    |     100 |      100 |     100 |     100 |
+ server.js |       0 |        0 |       0 |       0 | 1-7
+-----------|---------|----------|---------|---------|-------------------

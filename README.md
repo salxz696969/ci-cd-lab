@@ -21,6 +21,10 @@ Visit http://localhost:3000/. The response is `Hello, GitHub Actions!`.
 Set `PORT` to choose another port. Open `coverage/index.html` for the HTML report.
 The lockfile is committed; generated reports and dependencies are ignored.
 
+The `feature/health-route` exercise adds `GET /health`, which returns HTTP 200
+with JSON `{ "status": "ok" }`. Its test checks the status, content type and
+response body. The pull request is left open for review.
+
 ## How it works
 
 `app.js` defines and exports the Express application. `server.js` starts its

@@ -1,0 +1,9 @@
+GET /
+    ✔ returns HTTP 200 (130ms)
+    ✔ returns the expected greeting
+
+  GET /health
+    ✔ returns HTTP 200 and a JSON health status
+
+
+  3 passing (178ms)
