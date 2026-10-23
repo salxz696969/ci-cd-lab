@@ -1,0 +1,262 @@
+quality	Set up job	﻿2026-10-23T07:27:53.9943513Z Current runner version: '2.338.0'
+quality	Set up job	2026-10-23T07:27:53.9972252Z ##[group]Runner Image Provisioner
+quality	Set up job	2026-10-23T07:27:53.9973280Z Hosted Compute Agent
+quality	Set up job	2026-10-23T07:27:53.9974052Z Version: 20261012.601
+quality	Set up job	2026-10-23T07:27:53.9974865Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+quality	Set up job	2026-10-23T07:27:53.9975772Z Build Date: 2026-10-12T17:48:21Z
+quality	Set up job	2026-10-23T07:27:53.9976722Z Worker ID: {144de40d-f173-4664-a259-736271753546}
+quality	Set up job	2026-10-23T07:27:53.9977681Z Region: centralus
+quality	Set up job	2026-10-23T07:27:53.9978423Z Cloud: Azure
+quality	Set up job	2026-10-23T07:27:53.9979131Z ##[endgroup]
+quality	Set up job	2026-10-23T07:27:53.9980736Z ##[group]Operating System
+quality	Set up job	2026-10-23T07:27:53.9981467Z Ubuntu
+quality	Set up job	2026-10-23T07:27:53.9982190Z 24.04.5
+quality	Set up job	2026-10-23T07:27:53.9982821Z LTS
+quality	Set up job	2026-10-23T07:27:53.9983497Z ##[endgroup]
+quality	Set up job	2026-10-23T07:27:53.9984173Z ##[group]Runner Image
+quality	Set up job	2026-10-23T07:27:53.9984879Z Image: ubuntu-24.04
+quality	Set up job	2026-10-23T07:27:53.9985636Z Version: 20261012.334.1
+quality	Set up job	2026-10-23T07:27:53.9987236Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+quality	Set up job	2026-10-23T07:27:53.9989474Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+quality	Set up job	2026-10-23T07:27:53.9990652Z ##[endgroup]
+quality	Set up job	2026-10-23T07:27:53.9992162Z ##[group]GITHUB_TOKEN Permissions
+quality	Set up job	2026-10-23T07:27:53.9994429Z Contents: read
+quality	Set up job	2026-10-23T07:27:53.9995165Z Metadata: read
+quality	Set up job	2026-10-23T07:27:53.9995879Z ##[endgroup]
+quality	Set up job	2026-10-23T07:27:53.9998203Z Secret source: Actions
+quality	Set up job	2026-10-23T07:27:53.9999333Z Cache mode: write
+quality	Set up job	2026-10-23T07:27:54.0000608Z Prepare workflow directory
+quality	Set up job	2026-10-23T07:27:54.0401256Z Prepare all required actions
+quality	Set up job	2026-10-23T07:27:54.0495663Z Getting action download info
+quality	Set up job	2026-10-23T07:27:54.4048789Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+quality	Set up job	2026-10-23T07:27:54.5523679Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+quality	Set up job	2026-10-23T07:27:54.7285500Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+quality	Set up job	2026-10-23T07:27:55.0923620Z Complete job name: quality
+quality	Check out repository	﻿2026-10-23T07:27:55.1640557Z ##[group]Run actions/checkout@v4
+quality	Check out repository	2026-10-23T07:27:55.1641305Z with:
+quality	Check out repository	2026-10-23T07:27:55.1641700Z   repository: salxz696969/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.1645208Z   token: ***
+quality	Check out repository	2026-10-23T07:27:55.1645584Z   ssh-strict: true
+quality	Check out repository	2026-10-23T07:27:55.1645963Z   ssh-user: git
+quality	Check out repository	2026-10-23T07:27:55.1646345Z   persist-credentials: true
+quality	Check out repository	2026-10-23T07:27:55.1647142Z   clean: true
+quality	Check out repository	2026-10-23T07:27:55.1647525Z   sparse-checkout-cone-mode: true
+quality	Check out repository	2026-10-23T07:27:55.1647980Z   fetch-depth: 1
+quality	Check out repository	2026-10-23T07:27:55.1648380Z   fetch-tags: false
+quality	Check out repository	2026-10-23T07:27:55.1648759Z   show-progress: true
+quality	Check out repository	2026-10-23T07:27:55.1649135Z   lfs: false
+quality	Check out repository	2026-10-23T07:27:55.1649488Z   submodules: false
+quality	Check out repository	2026-10-23T07:27:55.1649895Z   set-safe-directory: true
+quality	Check out repository	2026-10-23T07:27:55.1650328Z   allow-unsafe-pr-checkout: false
+quality	Check out repository	2026-10-23T07:27:55.1651023Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.2578469Z Syncing repository: salxz696969/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.2584557Z ##[group]Getting Git version info
+quality	Check out repository	2026-10-23T07:27:55.2585635Z Working directory is '/home/runner/work/ci-cd-lab/ci-cd-lab'
+quality	Check out repository	2026-10-23T07:27:55.2621916Z [command]/usr/bin/git version
+quality	Check out repository	2026-10-23T07:27:55.2759205Z git version 2.55.0
+quality	Check out repository	2026-10-23T07:27:55.2909329Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.2917512Z Temporarily overriding HOME='/home/runner/work/_temp/29e8fa7d-fe53-4bf8-bfd2-696752118495' before making global git config changes
+quality	Check out repository	2026-10-23T07:27:55.2921818Z Adding repository directory to the temporary git global config as a safe directory
+quality	Check out repository	2026-10-23T07:27:55.2925977Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-cd-lab/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.2932653Z Deleting the contents of '/home/runner/work/ci-cd-lab/ci-cd-lab'
+quality	Check out repository	2026-10-23T07:27:55.2934642Z ##[group]Initializing the repository
+quality	Check out repository	2026-10-23T07:27:55.2936370Z [command]/usr/bin/git init /home/runner/work/ci-cd-lab/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.2974378Z hint: Using 'master' as the name for the initial branch. This default branch name
+quality	Check out repository	2026-10-23T07:27:55.2985249Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+quality	Check out repository	2026-10-23T07:27:55.2987053Z hint: to use in all of your new repositories, which will suppress this warning,
+quality	Check out repository	2026-10-23T07:27:55.2988217Z hint: call:
+quality	Check out repository	2026-10-23T07:27:55.2989087Z hint:
+quality	Check out repository	2026-10-23T07:27:55.2989801Z hint: 	git config --global init.defaultBranch <name>
+quality	Check out repository	2026-10-23T07:27:55.2990642Z hint:
+quality	Check out repository	2026-10-23T07:27:55.2991470Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+quality	Check out repository	2026-10-23T07:27:55.2992785Z hint: 'development'. The just-created branch can be renamed via this command:
+quality	Check out repository	2026-10-23T07:27:55.2993817Z hint:
+quality	Check out repository	2026-10-23T07:27:55.2994408Z hint: 	git branch -m <name>
+quality	Check out repository	2026-10-23T07:27:55.2995055Z hint:
+quality	Check out repository	2026-10-23T07:27:55.2995919Z hint: Disable this message with "git config set advice.defaultBranchName false"
+quality	Check out repository	2026-10-23T07:27:55.2997578Z Initialized empty Git repository in /home/runner/work/ci-cd-lab/ci-cd-lab/.git/
+quality	Check out repository	2026-10-23T07:27:55.2999790Z [command]/usr/bin/git remote add origin https://github.com/salxz696969/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.3057021Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.3059124Z ##[group]Disabling automatic garbage collection
+quality	Check out repository	2026-10-23T07:27:55.3060344Z [command]/usr/bin/git config --local gc.auto 0
+quality	Check out repository	2026-10-23T07:27:55.3116317Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.3117836Z ##[group]Setting up auth
+quality	Check out repository	2026-10-23T07:27:55.3119793Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Check out repository	2026-10-23T07:27:55.3156033Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Check out repository	2026-10-23T07:27:55.3633396Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Check out repository	2026-10-23T07:27:55.3638392Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Check out repository	2026-10-23T07:27:55.3853610Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Check out repository	2026-10-23T07:27:55.3889610Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality	Check out repository	2026-10-23T07:27:55.4089034Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+quality	Check out repository	2026-10-23T07:27:55.4127736Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.4129755Z ##[group]Fetching the repository
+quality	Check out repository	2026-10-23T07:27:55.4136917Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9582def464200fc455dab2298a5c8fc6c720ae3d:refs/remotes/pull/1/merge
+quality	Check out repository	2026-10-23T07:27:55.8454429Z From https://github.com/salxz696969/ci-cd-lab
+quality	Check out repository	2026-10-23T07:27:55.8468497Z  * [new ref]         9582def464200fc455dab2298a5c8fc6c720ae3d -> pull/1/merge
+quality	Check out repository	2026-10-23T07:27:55.8474408Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.8476006Z ##[group]Determining the checkout info
+quality	Check out repository	2026-10-23T07:27:55.8478327Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.8480675Z [command]/usr/bin/git sparse-checkout disable
+quality	Check out repository	2026-10-23T07:27:55.8492800Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+quality	Check out repository	2026-10-23T07:27:55.8525385Z ##[group]Checking out the ref
+quality	Check out repository	2026-10-23T07:27:55.8527856Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+quality	Check out repository	2026-10-23T07:27:55.8603944Z Note: switching to 'refs/remotes/pull/1/merge'.
+quality	Check out repository	2026-10-23T07:27:55.8605343Z
+quality	Check out repository	2026-10-23T07:27:55.8606269Z You are in 'detached HEAD' state. You can look around, make experimental
+quality	Check out repository	2026-10-23T07:27:55.8614642Z changes and commit them, and you can discard any commits you make in this
+quality	Check out repository	2026-10-23T07:27:55.8616376Z state without impacting any branches by switching back to a branch.
+quality	Check out repository	2026-10-23T07:27:55.8617882Z
+quality	Check out repository	2026-10-23T07:27:55.8618685Z If you want to create a new branch to retain commits you create, you may
+quality	Check out repository	2026-10-23T07:27:55.8620293Z do so (now or later) by using -c with the switch command. Example:
+quality	Check out repository	2026-10-23T07:27:55.8621528Z
+quality	Check out repository	2026-10-23T07:27:55.8621957Z   git switch -c <new-branch-name>
+quality	Check out repository	2026-10-23T07:27:55.8622625Z
+quality	Check out repository	2026-10-23T07:27:55.8623044Z Or undo this operation with:
+quality	Check out repository	2026-10-23T07:27:55.8623675Z
+quality	Check out repository	2026-10-23T07:27:55.8624196Z   git switch -
+quality	Check out repository	2026-10-23T07:27:55.8624690Z
+quality	Check out repository	2026-10-23T07:27:55.8626189Z Turn off this advice by setting config variable advice.detachedHead to false
+quality	Check out repository	2026-10-23T07:27:55.8632317Z
+quality	Check out repository	2026-10-23T07:27:55.8634177Z HEAD is now at 9582def Merge 210c413bfdcb899a5269894a4d734ee392af0849 into 1a68e109b9537d56e15742c251a97b9d866af646
+quality	Check out repository	2026-10-23T07:27:55.8640142Z ##[endgroup]
+quality	Check out repository	2026-10-23T07:27:55.8668447Z [command]/usr/bin/git log -1 --format=%H
+quality	Check out repository	2026-10-23T07:27:55.8687977Z 9582def464200fc455dab2298a5c8fc6c720ae3d
+quality	Activate pinned Yarn version	﻿2026-10-23T07:27:55.8997179Z ##[group]Run corepack enable
+quality	Activate pinned Yarn version	2026-10-23T07:27:55.8998237Z ^[[36;1mcorepack enable^[[0m
+quality	Activate pinned Yarn version	2026-10-23T07:27:55.8999240Z ^[[36;1mcorepack prepare yarn@4.18.1 --activate^[[0m
+quality	Activate pinned Yarn version	2026-10-23T07:27:55.9282546Z shell: /usr/bin/bash -e {0}
+quality	Activate pinned Yarn version	2026-10-23T07:27:55.9283573Z ##[endgroup]
+quality	Activate pinned Yarn version	2026-10-23T07:27:56.2290809Z Preparing yarn@4.18.1 for immediate activation...
+quality	Set up Node.js	﻿2026-10-23T07:27:56.9532930Z ##[group]Run actions/setup-node@v4
+quality	Set up Node.js	2026-10-23T07:27:56.9533209Z with:
+quality	Set up Node.js	2026-10-23T07:27:56.9533384Z   node-version: 24
+quality	Set up Node.js	2026-10-23T07:27:56.9533564Z   cache: yarn
+quality	Set up Node.js	2026-10-23T07:27:56.9533737Z   always-auth: false
+quality	Set up Node.js	2026-10-23T07:27:56.9533930Z   check-latest: false
+quality	Set up Node.js	2026-10-23T07:27:56.9536033Z   token: ***
+quality	Set up Node.js	2026-10-23T07:27:56.9536211Z ##[endgroup]
+quality	Set up Node.js	2026-10-23T07:27:57.0985525Z (node:2004) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Set up Node.js	2026-10-23T07:27:57.0987437Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Set up Node.js	2026-10-23T07:27:57.1009729Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+quality	Set up Node.js	2026-10-23T07:27:57.1091796Z ##[group]Environment details
+quality	Set up Node.js	2026-10-23T07:27:57.9710935Z node: v24.21.0
+quality	Set up Node.js	2026-10-23T07:27:57.9724719Z npm: 11.19.0
+quality	Set up Node.js	2026-10-23T07:27:57.9759098Z yarn: 4.18.1
+quality	Set up Node.js	2026-10-23T07:27:57.9769738Z ##[endgroup]
+quality	Set up Node.js	2026-10-23T07:27:57.9797015Z [command]/usr/local/bin/yarn --version
+quality	Set up Node.js	2026-10-23T07:27:58.1641452Z 4.18.1
+quality	Set up Node.js	2026-10-23T07:27:58.1831074Z [command]/usr/local/bin/yarn config get cacheFolder
+quality	Set up Node.js	2026-10-23T07:27:58.3728915Z /home/runner/.yarn/berry/cache
+quality	Set up Node.js	2026-10-23T07:27:58.5878538Z [command]/usr/local/bin/yarn config get enableGlobalCache
+quality	Set up Node.js	2026-10-23T07:27:58.5879373Z ^[[33mtrue^[[39m
+quality	Set up Node.js	2026-10-23T07:27:58.7268984Z Cache hit for: node-cache-Linux-x64-yarn-23dadc64b53a18aee6e0e56c5138594dace0b072aced4100a711e8cf6358a6d9
+quality	Set up Node.js	2026-10-23T07:27:58.7366586Z (node:2004) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality	Set up Node.js	2026-10-23T07:27:59.3307965Z Received 5020625 of 5020625 (100.0%), 10.5 MBs/sec
+quality	Set up Node.js	2026-10-23T07:27:59.3308910Z Cache Size: ~5 MB (5020625 B)
+quality	Set up Node.js	2026-10-23T07:27:59.3334837Z [command]/usr/bin/tar -xf /home/runner/work/_temp/f904817a-c720-40e1-bca3-d95812896bc5/cache.tzst -P -C /home/runner/work/ci-cd-lab/ci-cd-lab --use-compress-program unzstd
+quality	Set up Node.js	2026-10-23T07:27:59.3974005Z Cache restored successfully
+quality	Set up Node.js	2026-10-23T07:27:59.3997475Z Cache restored from key: node-cache-Linux-x64-yarn-23dadc64b53a18aee6e0e56c5138594dace0b072aced4100a711e8cf6358a6d9
+quality	Install dependencies	﻿2026-10-23T07:27:59.4180508Z ##[group]Run yarn install --immutable
+quality	Install dependencies	2026-10-23T07:27:59.4180860Z ^[[36;1myarn install --immutable^[[0m
+quality	Install dependencies	2026-10-23T07:27:59.4242401Z shell: /usr/bin/bash -e {0}
+quality	Install dependencies	2026-10-23T07:27:59.4242648Z ##[endgroup]
+quality	Install dependencies	2026-10-23T07:27:59.7275315Z ^[[94m➤^[[39m YN0000: · Yarn 4.18.1
+quality	Install dependencies	2026-10-23T07:27:59.7379333Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: ┌ Resolution step
+quality	Install dependencies	2026-10-23T07:27:59.7380358Z ##[group]Resolution step
+quality	Install dependencies	2026-10-23T07:27:59.7695099Z ##[endgroup]
+quality	Install dependencies	2026-10-23T07:27:59.7708150Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: └ Completed
+quality	Install dependencies	2026-10-23T07:27:59.7782591Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: ┌ Fetch step
+quality	Install dependencies	2026-10-23T07:27:59.7783495Z ##[group]Fetch step
+quality	Install dependencies	2026-10-23T07:27:59.8621742Z ##[endgroup]
+quality	Install dependencies	2026-10-23T07:27:59.8623173Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: └ Completed
+quality	Install dependencies	2026-10-23T07:27:59.8671532Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: ┌ Link step
+quality	Install dependencies	2026-10-23T07:27:59.8672451Z ##[group]Link step
+quality	Install dependencies	2026-10-23T07:28:00.7778007Z ##[endgroup]
+quality	Install dependencies	2026-10-23T07:28:00.7779521Z ^[[94m➤^[[39m ^[[90mYN0000^[[39m: └ Completed in 0s 910ms
+quality	Install dependencies	2026-10-23T07:28:00.7910729Z ^[[94m➤^[[39m YN0000: · Done in 1s 66ms
+quality	Run ESLint	﻿2026-10-23T07:28:00.8685246Z ##[group]Run yarn lint
+quality	Run ESLint	2026-10-23T07:28:00.8685576Z ^[[36;1myarn lint^[[0m
+quality	Run ESLint	2026-10-23T07:28:00.8748507Z shell: /usr/bin/bash -e {0}
+quality	Run ESLint	2026-10-23T07:28:00.8748746Z ##[endgroup]
+quality	Run tests	﻿2026-10-23T07:28:01.8509989Z ##[group]Run yarn test
+quality	Run tests	2026-10-23T07:28:01.8510290Z ^[[36;1myarn test^[[0m
+quality	Run tests	2026-10-23T07:28:01.8573721Z shell: /usr/bin/bash -e {0}
+quality	Run tests	2026-10-23T07:28:01.8573969Z ##[endgroup]
+quality	Run tests	2026-10-23T07:28:02.3667141Z
+quality	Run tests	2026-10-23T07:28:02.3706883Z
+quality	Run tests	2026-10-23T07:28:02.3751153Z   GET /
+quality	Run tests	2026-10-23T07:28:02.3840838Z     ^[[32m✔^[[39m returns HTTP 200
+quality	Run tests	2026-10-23T07:28:02.3870460Z     ^[[32m✔^[[39m returns the expected greeting
+quality	Run tests	2026-10-23T07:28:02.3871824Z
+quality	Run tests	2026-10-23T07:28:02.3873290Z   GET /health
+quality	Run tests	2026-10-23T07:28:02.3904031Z     ^[[32m✔^[[39m returns HTTP 200 and a JSON health status
+quality	Run tests	2026-10-23T07:28:02.3915162Z
+quality	Run tests	2026-10-23T07:28:02.3915533Z
+quality	Run tests	2026-10-23T07:28:02.3915967Z   3 passing (32ms)
+quality	Run tests	2026-10-23T07:28:02.3916346Z
+quality	Generate code coverage	﻿2026-10-23T07:28:02.4155719Z ##[group]Run yarn coverage
+quality	Generate code coverage	2026-10-23T07:28:02.4156154Z ^[[36;1myarn coverage^[[0m
+quality	Generate code coverage	2026-10-23T07:28:02.4221408Z shell: /usr/bin/bash -e {0}
+quality	Generate code coverage	2026-10-23T07:28:02.4221648Z ##[endgroup]
+quality	Generate code coverage	2026-10-23T07:28:03.0497212Z
+quality	Generate code coverage	2026-10-23T07:28:03.0536864Z
+quality	Generate code coverage	2026-10-23T07:28:03.0537450Z   GET /
+quality	Generate code coverage	2026-10-23T07:28:03.0833011Z     ^[[32m✔^[[39m returns HTTP 200
+quality	Generate code coverage	2026-10-23T07:28:03.0857553Z     ^[[32m✔^[[39m returns the expected greeting
+quality	Generate code coverage	2026-10-23T07:28:03.0879590Z
+quality	Generate code coverage	2026-10-23T07:28:03.0880492Z   GET /health
+quality	Generate code coverage	2026-10-23T07:28:03.0907301Z     ^[[32m✔^[[39m returns HTTP 200 and a JSON health status
+quality	Generate code coverage	2026-10-23T07:28:03.0916705Z
+quality	Generate code coverage	2026-10-23T07:28:03.0939577Z
+quality	Generate code coverage	2026-10-23T07:28:03.0946923Z   3 passing (43ms)
+quality	Generate code coverage	2026-10-23T07:28:03.0952272Z
+quality	Generate code coverage	2026-10-23T07:28:03.1872446Z -----------|---------|----------|---------|---------|-------------------
+quality	Generate code coverage	2026-10-23T07:28:03.1873534Z File       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+quality	Generate code coverage	2026-10-23T07:28:03.1874564Z -----------|---------|----------|---------|---------|-------------------
+quality	Generate code coverage	2026-10-23T07:28:03.1877056Z All files  |      65 |       75 |       0 |      65 |
+quality	Generate code coverage	2026-10-23T07:28:03.1878797Z  app.js    |     100 |      100 |     100 |     100 |
+quality	Generate code coverage	2026-10-23T07:28:03.1879641Z  server.js |       0 |        0 |       0 |       0 | 1-7
+quality	Generate code coverage	2026-10-23T07:28:03.1880661Z -----------|---------|----------|---------|---------|-------------------
+quality	Upload coverage HTML report	﻿2026-10-23T07:28:03.2271560Z ##[group]Run actions/upload-artifact@v4
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2271819Z with:
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272002Z   name: code-coverage-report
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272207Z   path: coverage/
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272387Z   if-no-files-found: ignore
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272601Z   compression-level: 6
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272801Z   overwrite: false
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2272983Z   include-hidden-files: false
+quality	Upload coverage HTML report	2026-10-23T07:28:03.2273188Z ##[endgroup]
+quality	Upload coverage HTML report	2026-10-23T07:28:03.3608717Z (node:2181) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Upload coverage HTML report	2026-10-23T07:28:03.3610098Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Upload coverage HTML report	2026-10-23T07:28:03.3743352Z With the provided path, there will be 13 files uploaded
+quality	Upload coverage HTML report	2026-10-23T07:28:03.3745688Z Artifact name is valid!
+quality	Upload coverage HTML report	2026-10-23T07:28:03.3747547Z Root directory input is valid!
+quality	Upload coverage HTML report	2026-10-23T07:28:03.6604769Z Beginning upload of artifact content to blob storage
+quality	Upload coverage HTML report	2026-10-23T07:28:03.7086205Z (node:2181) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+quality	Upload coverage HTML report	2026-10-23T07:28:03.9169082Z Uploaded bytes 144922
+quality	Upload coverage HTML report	2026-10-23T07:28:03.9567432Z Finished uploading artifact content to blob storage!
+quality	Upload coverage HTML report	2026-10-23T07:28:03.9568780Z SHA256 digest of uploaded artifact zip is 905e2168498eb745fdeef5047ae25b188dcba45e33692bde47ab27b08cf4d09e
+quality	Upload coverage HTML report	2026-10-23T07:28:03.9570072Z Finalizing artifact upload
+quality	Upload coverage HTML report	2026-10-23T07:28:04.4057699Z Artifact code-coverage-report.zip successfully finalized. Artifact ID 12486680454
+quality	Upload coverage HTML report	2026-10-23T07:28:04.4059004Z Artifact code-coverage-report has been successfully uploaded! Final size is 144922 bytes. Artifact ID is 12486680454
+quality	Upload coverage HTML report	2026-10-23T07:28:04.4060294Z Artifact download URL: https://github.com/salxz696969/ci-cd-lab/actions/runs/39917911066/artifacts/12486680454
+quality	Post Set up Node.js	﻿2026-10-23T07:28:04.4213795Z Post job cleanup.
+quality	Post Set up Node.js	2026-10-23T07:28:04.5207715Z (node:2193) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+quality	Post Set up Node.js	2026-10-23T07:28:04.5208899Z (Use `node --trace-deprecation ...` to show where the warning was created)
+quality	Post Set up Node.js	2026-10-23T07:28:04.5210291Z Cache hit occurred on the primary key node-cache-Linux-x64-yarn-23dadc64b53a18aee6e0e56c5138594dace0b072aced4100a711e8cf6358a6d9, not saving cache.
+quality	Post Check out repository	﻿2026-10-23T07:28:04.5320845Z Post job cleanup.
+quality	Post Check out repository	2026-10-23T07:28:04.6037294Z [command]/usr/bin/git version
+quality	Post Check out repository	2026-10-23T07:28:04.6098015Z git version 2.55.0
+quality	Post Check out repository	2026-10-23T07:28:04.6187671Z Temporarily overriding HOME='/home/runner/work/_temp/4aeefa3b-a69e-4c48-b0ad-8d645725dd8e' before making global git config changes
+quality	Post Check out repository	2026-10-23T07:28:04.6190945Z Adding repository directory to the temporary git global config as a safe directory
+quality	Post Check out repository	2026-10-23T07:28:04.6214033Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-cd-lab/ci-cd-lab
+quality	Post Check out repository	2026-10-23T07:28:04.6307054Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Post Check out repository	2026-10-23T07:28:04.6385188Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Post Check out repository	2026-10-23T07:28:04.7037636Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Post Check out repository	2026-10-23T07:28:04.7089758Z http.https://github.com/.extraheader
+quality	Post Check out repository	2026-10-23T07:28:04.7145603Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+quality	Post Check out repository	2026-10-23T07:28:04.7206375Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Post Check out repository	2026-10-23T07:28:04.7567514Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+quality	Post Check out repository	2026-10-23T07:28:04.7647203Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+quality	Complete job	﻿2026-10-23T07:28:04.7999314Z Cleaning up orphan processes
+quality	Complete job	2026-10-23T07:28:04.8299740Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -151,9 +151,52 @@ for this workflow. No credentials or deployment secrets are stored in source.
 
 ## Steps 12-14: Remote evidence and pull-request exercise
 
-The repository is private under the signed-in account. Its initial main-branch
-workflow, coverage artifact and feature-branch exercise are being recorded as
-part of the lab. Final run links and results will be added after verification.
+The private repository is https://github.com/salxz696969/ci-cd-lab.
+The initial implementation was committed on `main` as `1a68e10`. Its push
+triggered run 39917635906, which completed successfully. Installation, lint,
+both tests, coverage generation and artifact upload all passed. The downloaded
+`code-coverage-report` artifact was inspected; its summary matched the local
+baseline measurements.
+
+Main-branch run: https://github.com/salxz696969/ci-cd-lab/actions/runs/39917635906
+
+After checking the working tree and fetching `origin`, `feature/health-route`
+was created from the current `origin/main`. The feature adds `GET /health`,
+which returns HTTP 200 and JSON `{ "status": "ok" }`. Its additional test checks
+the status, JSON content type and exact response object. Local lint, all three
+tests and coverage passed before the branch was pushed.
+
+Pull request 1 targets `main` and is left open for review:
+https://github.com/salxz696969/ci-cd-lab/pull/1
+
+The pull-request workflow for code commit `210c413` also completed
+successfully. Run: https://github.com/salxz696969/ci-cd-lab/actions/runs/39917911066
+
+Final local and hosted coverage for the health-route version:
+
+| File | Statements | Branches | Functions | Lines |
+| --- | ---: | ---: | ---: | ---: |
+| app.js | 100% | 100% | 100% | 100% |
+| server.js | 0% | 0% | 0% | 0% |
+| All files | 65% | 75% | 0% | 65% |
+
+The health route adds covered lines, so total line coverage rises from 56.25%
+to 65%; the startup coverage gap remains. Three tests pass in the final suite.
+Both hosted artifacts were downloaded and their HTML/JSON reports inspected.
+The `evidence/` folder contains the local output, deliberate-failure assertion,
+main and pull-request run details and logs, authenticated GitHub screenshots,
+and local app and coverage screenshots.
+
+GitHub reports a non-fatal warning that the handout's v4 actions target the
+deprecated Node.js 20 action runtime and are being forced to run under Node.js
+24. It also reports the `ubuntu-latest` image migration. The successful runs
+verify current execution; a maintained project should update these action
+versions and validate the update. The application's configured runtime is
+Node.js 24, independent of the action implementation runtime.
+
+Because the repository is private, an instructor needs repository access to
+open the live run links. No merge into `main` was performed: the open pull
+request preserves the lab's review exercise.
 
 ## Reflection
 
